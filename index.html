@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Maravilla || Online Portfolio</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/about-me.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#hero"><img src="src/img/icon_logo/mm_logo.png" alt="maravilla-logo" id="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#hero" target="_self">Home</a></li>
+                <li><a href="#about-me" target="_self">About</a></li>
+                <li><a href="#projects" target="_self">Projects</a></li>
+                <li><a href="#contact" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle Navigation" style="color: #5d7b86;">&#9776;</button>
+        <div id="burger-nav-content">
+            <button class="nav-toggle-off">⨉</button>
+            <ul>
+                <li><a href="#hero" target="">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href=#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero-section" id="hero">
+        <article>
+            <p id="hi">Hi! I'm...</p>
+            <img src="src/img/pictureofme.png" alt="migs-profile" id="profile-pic">
+            <p id="name">Miguel Anton Maravilla</p>
+            <p id="role">And I'm a <span>Data Scientist!</span></p>
+            <p id="objective">A self-taught Data Scientist who's finding a dynamic working environment to help me grow in this field. With a solid foundation in data engineering and science, I am well-suited to handle and analyze large number of data. My goal is to help you improve the service of your organization.</p>
+            <section class="dc-buttons">
+                <a href="src/CV.pdf" id="dl-button" target="_blank">Download CV</a>
+                <a href="#contact" id="message-button">Message me</a>
+            </section>
+        </article>
+    </section>
+    <section class="about-section" id="about-me">
+        <h1>[About Me]</h1>
+        <section id="left-panel"> 
+            <img src="src/img/about_me_pic.png" alt="" id="about-me-pic">
+        </section>
+        <section id="right-panel">
+            <article>
+                <p id="intro">My name is Miguel Anton M. Maravilla</p>
+                <p id="intro-role">...I am a Data Scientist</p>
+                <p id="experience">My fascination for data science started when I started learning SQL. After that I became affiliated with different groups like <a href="https://www.facebook.com/fwdpeers" target="_blank">Filipino Web developer Peers</a>, <a href="https://www.facebook.com/groups/dataengineeringpilipinas/" target="_blank">Data Engineering Pilipinas</a>, <a href="https://www.facebook.com/groups/laracultph/" target="_blank">Laracult PH</a>, and <a href="https://www.facebook.com/groups/powerbipilipinas/" target="_blank">Power BI Pilipinas</a>. I started to improve through the guidances of the mentors of the mentioned groups. That is the start of my goal to become a Data Engineer/ Data Scientist. Right now, my goal is to become a valued member of your organization. I assure you that I will bring a positve impact towards the company.</p>
+                <section id="bottom-right">
+                    <img src="src/img/fwd_logo.jpg" alt="fwd_logo">
+                    <img src="src/img/data_engin_logo.jpg" alt="data_engin_logo">
+                    <img src="src/img/power_bi_logo.jpg" alt="">
+                </section>
+            </article>
+        </section>
+    </section>
+    <section class="projects-section" id="projects">
+        <h1>Projects</h1>
+    </section>
+    <section class="contact-section" id="contact"></section>
+
+    <script src="src/script/main.js" defer></script>
+</body>
+</html>
