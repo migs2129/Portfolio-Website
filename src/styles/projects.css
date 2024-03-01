@@ -1,0 +1,99 @@
+.projects-section h1{
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    font-size: 2rem;
+}
+#show-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+#show-projects img{
+    width: 550px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#show-projects img:hover{
+    scale:110%;
+    transition: 0.4s ease-in-out;
+}
+#project-id{
+    background-color: white;
+    text-align: center;
+    border: 2px solid #2f7b92;
+    border-radius: 10px;
+    margin: 2%;
+}
+#project-id h3{
+    color: #2f7b92;
+
+}
+#project-id a{
+    text-decoration: none;
+}
+#project-id #dl-code{
+    display: block;
+    margin: auto;
+    padding: 2%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f7b92;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#project-id #dl-code:hover{
+    scale: 120%;
+    transition: 0.4s ease-in-out;
+}
+.projects-section h3{
+    color: white;
+    font-size: 2rem;
+
+}
+@media only screen and (max-width: 780px){
+.projects-section{
+    display: block;
+}
+#show-projects{
+    display: flex;
+    justify-content: center;
+}
+#project-id #dl-code{
+    font-size: 1rem;
+}
+.projects-section h1{
+    font-size: 1.5rem;
+}
+#show-projects img{
+    padding: 2%;
+    width: 150px;
+    height: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#project-id{
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    margin: 2%;
+
+}
+#project-id h3{
+    background-color: #2f7b92;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+#project-id p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+}

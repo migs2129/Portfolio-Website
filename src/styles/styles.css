@@ -1,0 +1,255 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav{
+    margin-top: 0px;
+    display: flex;
+    height: 15vh;
+    font-size: 3vmin;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10%;
+}
+.nav.scrolled{
+    background-color: #364E55;
+    height: 9vh;
+    margin-top: -0.5%;
+    transition: 0.4s ease-in-out;
+}
+#logo .scrolled{
+    height: 1rem;
+}
+#burger-nav-content{
+    margin-top: 10%;
+    height: 30vh;
+    width: 70%;
+    right: 4rem;
+    position: fixed;
+    background-color: rgba(93,123,134, 0.8);
+    border-radius: 4px;
+    display: none;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#burger-nav-content.show {
+    display: flex;
+}
+#burger-nav-content .nav-toggle-off{
+    border: none;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background:none;
+    color: #364E55;
+    position: fixed;
+    right: 1rem;
+}
+#burger-nav-content li{
+    list-style-type: none;
+    width: 5%;
+}
+#burger-nav-content li a{
+    font-size: 2rem ;
+    text-decoration: none;
+    color: white;
+    padding-left: 45%;
+    border-bottom: 2px solid white;
+}
+.nav-toggle{
+    display: none;
+    position: fixed;
+    border: none;
+    right: 1rem;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background:none;
+}
+.nav-links{
+    top: 0px;
+    display: flex;
+    margin-right: auto;
+    padding-left: 5%;
+}
+.nav-links li{
+    margin-top: 0px;
+    list-style-type: none;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 1rem;
+}
+.nav-links li a:hover{
+    background-color: #5d7b86;
+}
+#logo{
+    display: inline-block;
+    padding-left: 1.5rem !important;
+    padding: 0.45rem;
+    height: 4.5rem;
+    width: 5rem;
+
+}
+.hero-section{
+    display: flex;
+    margin-top: 0px;
+    background-image: url(../img/a.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    height: 100svh;
+    width: 100%;
+    color: white;
+    animation: superImposed 1.5s ease-in-out;
+}
+.hero-section #profile-pic{
+    justify-self: center;
+    display: none;
+    width: 9rem;
+    height: 10rem;
+    background-color: #364E55;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-section article{
+    color:white;
+    margin: 7% 0% 0% 3%;
+    overflow:visible;
+    width: 100%;
+}
+.hero-section #hi{
+    font-size: 5vmin;
+}
+.hero-section #name{
+    font-size: 10vmin;
+    font-weight: bolder;
+}
+.hero-section #role{
+    font-size: 5vmin;
+}
+.hero-section #role span{
+    font-style: italic;
+    font-weight: bold;
+    color:#2f7b92
+}
+.hero-section #objective{
+    font-size: 3vmin;
+    width: 65%;
+    padding-bottom: 2%;
+}
+.hero-section .dc-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.hero-section #dl-button{
+    width: 8rem;
+    height: 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #2f7b92;
+    font-weight: bold;
+    border: 2px solid #2f7b92;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    position: relative;
+    animation-delay: 5s;
+    animation: fadeIn 2s ease-in;
+}
+.hero-section #message-button{
+    width: 8.5rem;
+    height: 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight:lighter;
+    color: #2f7b92;
+    border: 2px solid #2f7b92;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    animation-delay: 5s;
+    animation: fadeIn 2s ease-in;
+
+}
+.hero-section #message-button:hover, .hero-section #dl-button:hover{
+    background-color: #2f7b92;
+    color: white;
+    transition: 0.3s;
+    scale:120%;
+}
+.about-section{
+    background-image: url(../img/b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;   
+    padding-bottom: 5%;
+}
+.projects-section{
+    background-image: url(../img/d.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height:fit-content;
+    width: 100%;
+}
+.contact-section{
+    background-image: url(../img/c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: fit-content;
+}
+@keyframes superImposed{
+    0%{margin-top: -100px; opacity: 10%;}
+    100%{margin-top: 0px; opacity: 100%;}
+}
+@keyframes fadeIn{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@media only screen and (max-width: 780px){
+    .nav{
+        display: none;
+    }
+    .hero-section #hi{
+        margin-top: 0px;
+    }
+    .hero-section #name{
+        font-size: 2.5rem;
+    }
+    .hero-section #name, .hero-section #role, .hero-section #dc-button{
+        text-align: center;
+    }
+    .hero-section #objective {
+        width: 100%;
+    }
+    .hero-section #profile-pic{
+        display: flex;
+    }
+    .hero-section .dc-buttons{ 
+        text-align: center;
+        width: 100%;
+    }
+    .hero-section #dl-button, .hero-section #message-button{
+        font-size: 2vh;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2% 1%;
+    }
+    .nav-toggle{
+        display: flex;
+    }
+
+}
