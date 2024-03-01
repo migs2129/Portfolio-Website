@@ -6,9 +6,13 @@
     <title>Miguel Maravilla || Online Portfolio</title>
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/about-me.css">
+    <link rel="stylesheet" href="src/styles/projects.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
+        <!----------- Navigation Bar --------------->
         <nav class="nav">
             <a href="#hero"><img src="src/img/icon_logo/mm_logo.png" alt="maravilla-logo" id="logo"></a>
             <ul class="nav-links">
@@ -18,9 +22,9 @@
                 <li><a href="#contact" target="_self">Contact</a></li>
             </ul>
         </nav>
+        <!----------- Navigation bar toggle for table & phone --------------->
         <button class="nav-toggle" aria-label="Toggle Navigation" style="color: #5d7b86;">&#9776;</button>
         <div id="burger-nav-content">
-            <button class="nav-toggle-off">⨉</button>
             <ul>
                 <li><a href="#hero" target="">Home</a></li>
                 <li><a href="#about-me">About</a></li>
@@ -29,6 +33,7 @@
             </ul>
         </div>
     </header>
+    <!----------- Hero Section --------------->
     <section class="hero-section" id="hero">
         <article>
             <p id="hi">Hi! I'm...</p>
@@ -42,6 +47,7 @@
             </section>
         </article>
     </section>
+    <!----------- About Me Section --------------->
     <section class="about-section" id="about-me">
         <h1>[About Me]</h1>
         <section id="left-panel"> 
@@ -60,10 +66,53 @@
             </article>
         </section>
     </section>
+    <!----------- Projects Section --------------->
     <section class="projects-section" id="projects">
-        <h1>Projects</h1>
+        <h1>[Projects]</h1>
+        <div id="show-projects">        
+            <div id="project-id">
+                <img src="src/img/time series plot.png" alt="time series plot program">
+                <h3>Time Series Analysis</h3>
+                <article id="project-details"><p>Simple Program that plots a time series related data.</p></article>
+                <a href="https://github.com/migs2129/Math-with-Python" target="_blank"><button id="dl-code">Source Code</button></a>
+            </div>
+            <div id="project-id">
+                <img src="src/img/basic_electronics.png" alt="basic electronics">
+                <h3>Electric Measurement Calculator</h3>
+                <article id="project-details"><p>Program that offers variety of features solving measures of electricity.</p> </article>
+                <a href="https://github.com/migs2129/Math-with-Python" target="_blank"><button id="dl-code">Source Code</button></a>
+            </div>
+            <div id="project-id">
+                <img src="src/img/stats_calcu.png" alt="simple stats calcu">
+                <h3>Simple Stats Calculator</h3>
+                <article id="project-details"><p>Program that offers variety of features solving measures of electricity.</p> </article>
+                <a href="https://github.com/migs2129/Math-with-Python" target="_blank"><button id="dl-code">Source Code</button></a>
+            </div>
+            <div id="project-id">
+                <img src="src/img/quadratic.png" alt="quadratic equation">
+                <h3>Quadratic Equation Calculator</h3>
+                <article id="project-details"><p>Program that offers variety of features solving measures of electricity.</p> </article>
+                <a href="https://github.com/migs2129/Math-with-Python" target="_blank"><button id="dl-code">Source Code</button></a>
+            </div>
+        </div>
     </section>
-    <section class="contact-section" id="contact"></section>
+    <!----------- Contact Section --------------->
+    <section class="contact-section" id="contact">
+        <form method="post"action="#" id="message-form">
+            <fieldset>
+                <legend style="text-align: center;">[Contact Me]</legend>
+                <label for="name"><input type="text" id="name" placeholder="Name:" required/></label>
+                <label for="email"><input type="email" id="email" placeholder="Email:" required/></label>
+                <label for="message"><textarea type="text" id="message" placeholder="Message:" required/></textarea></label>
+            </fieldset>
+            <input id="submit" type="submit" value="Send Message"/>
+        </form>
+        <div id="contact-outside">
+            <a href=https://www.facebook.com/profile.php?id=100090954000525" class="fa fa-facebook" target="_blank"></a>
+            <a href="#contact" class="fa fa-reddit"></a>
+            <a href="#contact" class="fa fa-weixin"></a>
+        </div>
+    </section>
 
     <script src="src/script/main.js" defer></script>
 </body>
